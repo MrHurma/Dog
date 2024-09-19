@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.intro{
+    background: url(../img/bg-main.png) no-repeat center center / cover;
+    padding: 208px 0 400px 0;
+    &__title{
+        color: white;
+        font-size: 50px;
+        font-weight: 900;
+        max-width: 585px;
+    }
+}
+.dog{
+    margin-top: -80px;
+    margin-bottom: 180px;
+    &__wrap{
+        position: relative;
+        background-color: #5D62B5;
+        padding: 100px 87px 0 87px;
+        border-radius: 40px;
+    }
+    &__dots{
+        position: absolute;
+        top: -110px;
+        right: -70px;
+    }
+    &__subtitle{
+        color: #F5F5F5;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+        &-box{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__title{
+        color: white;
+        font-size: 36px;
+        font-weight: 900;
+        max-width: 585px;
+        margin-bottom: 36px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        color: #F5F5F5;
+        margin-bottom: -54px;
+    }
+    &__photo{
+        position: relative;
+        bottom: -120px;
+        & img{
+            border-radius: 40px; 
+        }
+    }
+    &__blob{
+        position: absolute;
+        bottom: -140px;
+        left: 0;
+    }
+}
+.natus{
+    padding-bottom: 120px;
+    &__wrap{
+        margin: auto;
+    }
+    &__block{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 36px;
+        margin-bottom: 68px;
+        &-alabuga{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 12px;
+            color: #5D62B5;
+            margin-bottom: 33px;
+            &::before{
+                background: url(../img/OverlineMark.svg) no-repeat center center / cover;
+                content: '';
+                display: block;
+                width: 19px;
+                height: 18px;
+                margin-right: 10px;
+            }
+        }
+        &-red{
+            color: #F2726F;
+            font-weight: 900;
+            font-size: 19px;
+            display: flex;
+            align-items: flex-start;
+            &-1{
+                &::before{
+                    background: url(../img/dog_love_24x.svg) no-repeat center center / cover;
+                    content: '';
+                    display: block;
+                    width: 63px;
+                    height: 63px;
+                    margin-right: 23px;
+                }
+            }
+            &-2{
+                &::before{
+                    background: url(../img/dog_vet_24x.svg) no-repeat center center / cover;
+                    content: '';
+                    display: block;
+                    width: 63px;
+                    height: 63px;
+                    margin-right: 23px;
+                }
+            }
+            &-3{
+                &::before{
+                    background: url(../img/dog_stream_24x.svg) no-repeat center center / cover;
+                    content: '';
+                    display: block;
+                    width: 63px;
+                    height: 63px;
+                    margin-right: 23px;
+                }
+            }
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        align-items: flex-start;
+        padding-left: 86px;
+        color: #4B4B4B;
+    }
+    &__box{
+        max-width: 324px;
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.ball{
+    background-color: #29C3BE;
+    position: relative;
+    z-index: -3;
+    display: flex;
+    height: 500px;
+    &__box{
+        position: absolute;
+        right: 210px;
+        top: 111px;
+        z-index: 1;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 36px;
+        color: white;
+        max-width: 410px;
+        margin-bottom: 42px;
+    }
+    &__btn{
+        padding: 15px 20px;
+        background-color: #F2726F;
+        border-radius: 5px;
+        color: white;
+    }
+    &__blob{
+        position: absolute;
+        z-index: -1;
+    }
+    &__dog{
+        z-index: 0;
+        position: absolute;
+        top: 45px;
+    }
+    &__circles{
+        z-index: -2;
+        position: absolute;
+        top: 120px;
+    }
+    &__ball{
+        position: absolute;
+        z-index: -1;
+        right: 44px;
+        top: 113px;
+    }
+    &__line{
+        position: absolute;
+        z-index: -2;
+        right: 100px;
+    }
+}
